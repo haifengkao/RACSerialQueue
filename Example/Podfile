@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'RACSerialQueue_Example' do
+  pod 'RACSerialQueue', :path => '../'
+
+  target 'RACSerialQueue_Tests' do
+    inherit! :search_paths
+
+    pod 'Kiwi'
+  end
+end
