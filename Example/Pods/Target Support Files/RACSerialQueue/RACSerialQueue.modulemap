@@ -1,0 +1,6 @@
+framework module RACSerialQueue {
+  umbrella header "RACSerialQueue-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,6 @@
+framework module Pods_RACSerialQueue_Tests {
+  umbrella header "Pods-RACSerialQueue_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}

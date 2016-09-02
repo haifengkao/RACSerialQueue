@@ -1,0 +1,19 @@
+PODS:
+  - Kiwi (2.4.0)
+  - RACSerialQueue (0.1.0)
+
+DEPENDENCIES:
+  - Kiwi
+  - RACSerialQueue (from `../`)
+
+EXTERNAL SOURCES:
+  RACSerialQueue:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  Kiwi: f49c9d54b28917df5928fe44968a39ed198cb8a8
+  RACSerialQueue: bb376eb1d92b83d53ddc02daf0817d4dd4482218
+
+PODFILE CHECKSUM: 56ac2da9dec0e6bfc94aedc4fdcdb9f2356f21e7
+
+COCOAPODS: 1.0.1
