@@ -84,8 +84,12 @@ strip_invalid_archs() {
 
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
+  install_framework "$BUILT_PRODUCTS_DIR/RACSerialQueue/RACSerialQueue.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/ReactiveCocoa/ReactiveCocoa.framework"
   install_framework "$BUILT_PRODUCTS_DIR/Kiwi/Kiwi.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
+  install_framework "$BUILT_PRODUCTS_DIR/RACSerialQueue/RACSerialQueue.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/ReactiveCocoa/ReactiveCocoa.framework"
   install_framework "$BUILT_PRODUCTS_DIR/Kiwi/Kiwi.framework"
 fi

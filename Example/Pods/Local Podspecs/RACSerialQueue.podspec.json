@@ -1,9 +1,9 @@
 {
   "name": "RACSerialQueue",
   "version": "0.1.0",
-  "summary": "A short description of RACSerialQueue.",
-  "description": "TODO: Add long description of the pod here.",
-  "homepage": "https://github.com/<GITHUB_USERNAME>/RACSerialQueue",
+  "summary": "A queue for ReactiveCocoa",
+  "description": "ReactiveCocoa didn't have any queue support. Now it has.",
+  "homepage": "https://github.com/haifengkao/RACSerialQueue",
   "license": {
     "type": "MIT",
     "file": "LICENSE"
@@ -12,11 +12,16 @@
     "Hai Feng Kao": "haifeng@cocoaspice.in"
   },
   "source": {
-    "git": "https://github.com/<GITHUB_USERNAME>/RACSerialQueue.git",
+    "git": "https://github.com/haifengkao/RACSerialQueue.git",
     "tag": "0.1.0"
   },
   "platforms": {
     "ios": "8.0"
   },
-  "source_files": "RACSerialQueue/Classes/**/*"
+  "source_files": "RACSerialQueue/Classes/**/*",
+  "dependencies": {
+    "ReactiveCocoa": [
+      "~> 2.0"
+    ]
+  }
 }

@@ -1,6 +1,14 @@
 PODS:
   - Kiwi (2.4.0)
-  - RACSerialQueue (0.1.0)
+  - RACSerialQueue (0.1.0):
+    - ReactiveCocoa (~> 2.0)
+  - ReactiveCocoa (2.5):
+    - ReactiveCocoa/UI (= 2.5)
+  - ReactiveCocoa/Core (2.5):
+    - ReactiveCocoa/no-arc
+  - ReactiveCocoa/no-arc (2.5)
+  - ReactiveCocoa/UI (2.5):
+    - ReactiveCocoa/Core
 
 DEPENDENCIES:
   - Kiwi
@@ -12,8 +20,9 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   Kiwi: f49c9d54b28917df5928fe44968a39ed198cb8a8
-  RACSerialQueue: bb376eb1d92b83d53ddc02daf0817d4dd4482218
+  RACSerialQueue: adb5e5648d47b4224bc082307c9af574a412425f
+  ReactiveCocoa: e2db045570aa97c695e7aa97c2bcab222ae51f4a
 
-PODFILE CHECKSUM: 56ac2da9dec0e6bfc94aedc4fdcdb9f2356f21e7
+PODFILE CHECKSUM: cc63d1bcd7da929e6a3739eac0b5892264b686a9
 
 COCOAPODS: 1.0.1

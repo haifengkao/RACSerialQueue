@@ -5,6 +5,7 @@ target 'RACSerialQueue_Example' do
 
   target 'RACSerialQueue_Tests' do
     inherit! :search_paths
+    pod 'RACSerialQueue', :path => '../'
 
     pod 'Kiwi'
   end
