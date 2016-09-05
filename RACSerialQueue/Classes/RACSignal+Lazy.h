@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-#import "RACSignal.h"
+@import ReactiveCocoa;
 @interface RACSignal(Lazy)
 
 // return a replay signal that will subscribe lazily and dispose the source signal when all subscriptions are disposed

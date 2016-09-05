@@ -69,10 +69,8 @@
         isCancelled = YES;    
     }];
 
-    @weakify(self);
     @weakify(result);
     RACSignal* signal = [RACSignal defer:^(){
-        @strongify(self);
         @strongify(result);
 
         if (isCancelled) {
@@ -87,14 +85,13 @@
             // pipe the values to result
             RACSignal* replaySignal = [signalToBeExecuted replayLazilyAutoDisposed];
             RACSignal* signal = [replaySignal takeUntil:[result ignoreValues]];
-            RACDisposable* disp = [signal subscribeNext:^(id x) {
+            [signal subscribeNext:^(id x) {
                 [result sendNext:x];
             } error:^(NSError *error) {
                 [result sendError:error];
             } completed:^{
                 [result sendCompleted];
             }];
-            NSCAssert(disp, @"the disposable will be called when result is completed");
             return signal;
         } 
     }];
