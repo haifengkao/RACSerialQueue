@@ -92,7 +92,7 @@
             } completed:^{
                 [result sendCompleted];
             }];
-            return signal;
+            return [signal catchTo:[RACSignal empty]]; // don't let error stops the queue
         } 
     }];
 

@@ -20,13 +20,24 @@
 SPEC_BEGIN(InitialTests)
 
 describe(@"RACSerialQueue", ^{
+      it(@"should handle error event gracefully", ^{
+          __block NSNumber* done = @(0);
+         RACSerialQueue* queue = [[RACSerialQueue alloc] init];
+         [queue addSignal:[RACSignal error:[NSError errorWithDomain:@"serialqueue" code:123 userInfo:@{NSLocalizedDescriptionKey:@"wrong"}]]];
+         RACSignal* signal = [RACSignal createSignal:^RACDisposable *(id<RACSubscriber> subscriber) {
+             done = @(1);
+             return nil;
+         }];
+         [queue addSignal:signal];
+         [[expectFutureValue(done) shouldEventuallyBeforeTimingOutAfter(10.0)] beTrue];
+      });
 
       it(@"cannot be cancelled immediately", ^{
          __block NSNumber* done = @(0);
          RACSerialQueue* queue = [[RACSerialQueue alloc] init];
          RACSignal* signal = [RACSignal createSignal:^RACDisposable *(id<RACSubscriber> subscriber) {
              done = @(1);
-              return nil;
+             return nil;
          }];
          RACSubject* subject = [queue addSignal:signal];
          [subject sendCompleted]; // will not cancel the signal execution, because the signal is alreay executed at addSignal
@@ -51,7 +62,7 @@ describe(@"RACSerialQueue", ^{
          }];
          RACSignal* badSignal = [RACSignal createSignal:^RACDisposable *(id<RACSubscriber> subscriber) {
              [[@(NO) should] beYes];
-              return nil;
+             return nil;
          }];
          [queue addSignal:goodSignal];
          subject = [queue addSignal:badSignal];
