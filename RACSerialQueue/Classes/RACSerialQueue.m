@@ -14,6 +14,7 @@
 #import "RACReplaySubject.h"
 #import "NSObject+RACDeallocating.h"
 #import "RACSignal+Operations.h"
+#import "RACSignal+Lazy.h"
 
 @interface RACSerialQueue()
 @property (nonatomic, strong) RACSubject* subject; // it will receive the signals and put them in queue
@@ -84,7 +85,8 @@
             return signalToBeExecuted;
         } else {
             // pipe the values to result
-            RACSignal* signal = [signalToBeExecuted takeUntil:[result ignoreValues]];
+            RACSignal* replaySignal = [signalToBeExecuted replayLazilyAutoDisposed];
+            RACSignal* signal = [replaySignal takeUntil:[result ignoreValues]];
             RACDisposable* disp = [signal subscribeNext:^(id x) {
                 [result sendNext:x];
             } error:^(NSError *error) {
