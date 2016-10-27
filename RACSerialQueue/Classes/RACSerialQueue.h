@@ -14,7 +14,7 @@
 // Useful when you need to protect a single resource that cannot be shared
 @interface RACSerialQueue : NSObject
 
-- (instancetype)init;
+- (instancetype)init NS_DESIGNATED_INITIALIZER;
 
 // if you want to cancel the execution
 // make the returned subject complete
