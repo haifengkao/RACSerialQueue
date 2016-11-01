@@ -3,13 +3,14 @@
 # * https://github.com/supermarin/xcpretty#usage
 
 language: objective-c
-before_install:
-  #- brew update
-  #- "brew uninstall xctool; brew install xctool --HEAD;"
-  - gem i cocoapods --no-ri --no-rdoc
-  - "gem install slather --no-rdoc --no-ri --no-document --quiet"
-#xcode_workspace: Example/RACSerialQueue.xcworkspace
-#xcode_scheme: RACSerialQueue-Example
-#xcode_sdk: iphonesimulator
-script: xctool test -workspace Example/RACSerialQueue.xcworkspace -scheme RACSerialQueue-Example -sdk iphonesimulator GCC_INSTRUMENT_PROGRAM_FLOW_ARCS=YES GCC_GENERATE_TEST_COVERAGE_FILES=YES
-after_success: slather
+
+install:
+  # too slow
+  #- bundle exec pod repo update --silent
+  - pod install --project-directory=Example
+
+script:
+  - set -o pipefail && xcodebuild test -workspace Example/RACSerialQueue.xcworkspace -scheme RACSerialQueue-Example -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 6' ONLY_ACTIVE_ARCH=YES GCC_INSTRUMENT_PROGRAM_FLOW_ARCS=YES GCC_GENERATE_TEST_COVERAGE_FILES=YES | xcpretty -c
+
+after_success: 
+  - bash <(curl -s https://codecov.io/bash)
