@@ -65,35 +65,42 @@
     RACSubject* result = [RACReplaySubject subject]; // signalBlock might be executed before the result is subscribed
 
     __block BOOL isCancelled = NO;
+    @weakify(self);
     [result subscribeCompleted:^{
-        isCancelled = YES;    
+        @strongify(self);
+        @synchronized(self) { // protect isCancelled
+            isCancelled = YES;    
+        }
     }];
 
     @weakify(result);
     RACSignal* signal = [RACSignal defer:^(){
         @strongify(result);
+        @strongify(self);
 
-        if (isCancelled) {
-            // nothing to do, just return
-            return [RACSignal empty];
-        } 
+        @synchronized(self) { // protect isCancelled
+            if (isCancelled) {
+                // nothing to do, just return
+                return [RACSignal empty];
+            } 
 
-        if (!result) {
-            // user doesn't want to control the queue's behavior nor getting the sendNext values
-            return signalToBeExecuted;
-        } else {
-            // pipe the values to result
-            RACSignal* replaySignal = [signalToBeExecuted replayLazilyAutoDisposed];
-            RACSignal* signal = [replaySignal takeUntil:[result ignoreValues]];
-            [signal subscribeNext:^(id x) {
-                [result sendNext:x];
-            } error:^(NSError *error) {
-                [result sendError:error];
-            } completed:^{
-                [result sendCompleted];
-            }];
-            return [signal catchTo:[RACSignal empty]]; // don't let error stops the queue
-        } 
+            if (!result) {
+                // user doesn't want to control the queue's behavior nor getting the sendNext values
+                return signalToBeExecuted;
+            } else {
+                // pipe the values to result
+                RACSignal* replaySignal = [signalToBeExecuted replayLazilyAutoDisposed];
+                RACSignal* signal = [replaySignal takeUntil:[result ignoreValues]];
+                [signal subscribeNext:^(id x) {
+                    [result sendNext:x];
+                } error:^(NSError *error) {
+                    [result sendError:error];
+                } completed:^{
+                    [result sendCompleted];
+                }];
+                return [signal catchTo:[RACSignal empty]]; // don't let error stops the queue
+            } 
+        }
     }];
 
     // add the signal to the queue

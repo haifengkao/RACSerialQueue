@@ -40,7 +40,7 @@ describe(@"RACSerialQueue", ^{
              return nil;
          }];
          RACSubject* subject = [queue addSignal:signal];
-         [subject sendCompleted]; // will not cancel the signal execution, because the signal is alreay executed at addSignal
+         [subject sendCompleted]; // will not cancel the signal execution, because the signal is already executed at addSignal
          
          [[expectFutureValue(done) shouldEventuallyBeforeTimingOutAfter(10.0)] beTrue];
       });
@@ -66,6 +66,31 @@ describe(@"RACSerialQueue", ^{
          }];
          [queue addSignal:goodSignal];
          subject = [queue addSignal:badSignal];
+         [subject sendCompleted]; // cancel the signal execution
+         
+         [[expectFutureValue(done) shouldEventuallyBeforeTimingOutAfter(10.0)] beTrue];
+      });
+
+      it(@"can cancel the active signal", ^{
+          __block NSInteger count = 0;
+          __block NSNumber* done = @(0);
+         __block RACSubject* subject = nil;
+         RACSerialQueue* queue = [[RACSerialQueue alloc] init];
+         RACSignal* goodSignal = [RACSignal createSignal:^RACDisposable *(id<RACSubscriber> subscriber) {
+             count++;
+             [[[RACSignal empty] delay:0.1] subscribeCompleted:^{
+                 [subscriber sendCompleted];
+                 [[@(count) should] equal:@(1)]; // should be subscribed at most once
+                 done = @(1);
+             }];
+             RACDisposable* disp = [[[RACSignal empty] delay:0.05] subscribeCompleted:^{
+                 // should not be executed
+                 [[@(NO) should] beYes];
+             }];
+             
+             return disp;
+         }];
+         subject = [queue addSignal:goodSignal];
          [subject sendCompleted]; // cancel the signal execution
          
          [[expectFutureValue(done) shouldEventuallyBeforeTimingOutAfter(10.0)] beTrue];
