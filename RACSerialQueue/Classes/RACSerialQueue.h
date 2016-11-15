@@ -21,6 +21,10 @@
 // e.g. [returnValue sendCompleted]
 - (RACSubject *)addSignal:(RACSignal*)signal;
 
+// stop the whole queue
+// Note that there is no start method
+// if you want to start the queue again, you have to create another queue
+- (void)stop;
 - (void)useMainThread; 
 
 @end

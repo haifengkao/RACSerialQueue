@@ -17,9 +17,10 @@
 #import "RACSignal+Lazy.h"
 
 @interface RACSerialQueue()
-@property (nonatomic, strong) RACSubject* subject; // it will receive the signals and put them in queue
-@property (nonatomic, strong) RACSignal* queue; // the serial queue
+@property (strong) RACSubject* subject; // it will receive the signals and put them in queue
+@property (strong) RACSignal* queue; // the serial queue
 @property (assign) BOOL shouldUseMainThread;
+@property (assign) BOOL shouldStop;
 @end
 
 @implementation RACSerialQueue
@@ -27,7 +28,7 @@
 {
     if (self = [super init]) {
         RACSubject* subject = [RACSubject subject];
-        RACSignal* queue = [[subject concat] takeUntil:self.rac_willDeallocSignal];
+        RACSignal* queue = [[[subject concat] takeUntil:[RACObserve(self, shouldStop) ignore:@NO]] takeUntil:self.rac_willDeallocSignal];
         _subject = subject;
         _queue = queue;
         [queue subscribeNext:^(id x) {
@@ -38,7 +39,10 @@
     return self;
 }
 
-
+- (void)stop
+{
+    self.shouldStop = YES;
+} 
 /** 
   * If you want the signal to deliver on the main thread, call this method right after init
   * 
