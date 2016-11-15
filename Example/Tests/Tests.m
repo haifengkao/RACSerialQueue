@@ -95,6 +95,31 @@ describe(@"RACSerialQueue", ^{
          
          [[expectFutureValue(done) shouldEventuallyBeforeTimingOutAfter(10.0)] beTrue];
       });
+    
+      it(@"can stop the whole queue", ^{
+          __block NSInteger count = 0;
+          __block NSNumber* done = @(0);
+          RACSerialQueue* queue = [[RACSerialQueue alloc] init];
+          RACSignal* goodSignal = [RACSignal createSignal:^RACDisposable *(id<RACSubscriber> subscriber) {
+              count++;
+              [[[RACSignal empty] delay:0.1] subscribeCompleted:^{
+                  [subscriber sendCompleted];
+                  [[@(count) should] equal:@(1)]; // should be subscribed at most once
+                  done = @(1);
+              }];
+              RACDisposable* disp = [[[RACSignal empty] delay:0.05] subscribeCompleted:^{
+                  // should not be executed
+                  [[@(NO) should] beYes];
+              }];
+              
+              return disp;
+          }];
+          [queue addSignal:goodSignal];
+ 
+          [queue stop];
+          
+          [[expectFutureValue(done) shouldEventuallyBeforeTimingOutAfter(10.0)] beTrue];
+      });
 });
 
 SPEC_END
