@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'RACSerialQueue'
-  s.version          = '0.11.0'
+  s.version          = '0.12.0'
   s.summary          = 'A queue for ReactiveCocoa'
 
 # This description is used to generate tags and improve search results.
@@ -38,5 +38,5 @@ Pod::Spec.new do |s|
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
-  s.dependency 'ReactiveObjC', '~> 2.0'
+  s.dependency 'ReactiveObjC', '>= 2.1.2' # solve the annoying weakify macro not defined problem
 end

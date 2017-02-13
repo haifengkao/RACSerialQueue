@@ -137,7 +137,7 @@ extern const NSInteger RACSignalErrorNoMatchingCase;
 /// Returns a signal which sends RACTuples of the buffered values at each
 /// interval on `scheduler`. When the receiver completes, any currently-buffered
 /// values will be sent immediately.
-- (RACSignal<ValueType> *)bufferWithTime:(NSTimeInterval)interval onScheduler:(RACScheduler *)scheduler;
+- (RACSignal<RACTuple *> *)bufferWithTime:(NSTimeInterval)interval onScheduler:(RACScheduler *)scheduler;
 
 /// Collects all receiver's `next`s into a NSArray. Nil values will be converted
 /// to NSNull.
@@ -507,7 +507,7 @@ extern const NSInteger RACSignalErrorNoMatchingCase;
 /// Returns a signal which passes through `next`s and `error`s from `trueSignal`
 /// and/or `falseSignal`, and sends `completed` when both `boolSignal` and the
 /// last switched signal complete.
-+ (RACSignal<ValueType> *)if:(RACSignal *)boolSignal then:(RACSignal *)trueSignal else:(RACSignal *)falseSignal;
++ (RACSignal<ValueType> *)if:(RACSignal<NSNumber *> *)boolSignal then:(RACSignal *)trueSignal else:(RACSignal *)falseSignal;
 
 /// Adds every `next` to an array. Nils are represented by NSNulls. Note that
 /// this is a blocking call.
