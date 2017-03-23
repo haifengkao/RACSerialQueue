@@ -94,7 +94,7 @@
             } else {
                 // pipe the values to result
                 RACSignal* replaySignal = [signalToBeExecuted replayLazilyAutoDisposed];
-                RACSignal* signal = [replaySignal takeUntil:[result ignoreValues]];
+                RACSignal* signal = [replaySignal takeUntil:[[result ignoreValues] materialize]];
                 [signal subscribeNext:^(id x) {
                     [result sendNext:x];
                 } error:^(NSError *error) {

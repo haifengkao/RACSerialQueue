@@ -17,7 +17,7 @@
 - (instancetype)init NS_DESIGNATED_INITIALIZER;
 
 // if you want to cancel the execution
-// make the returned subject complete
+// make the returned subject complete or error
 // e.g. [returnValue sendCompleted]
 - (RACSubject *)addSignal:(RACSignal*)signal;
 
