@@ -27,4 +27,7 @@
 - (void)stop;
 - (void)useMainThread; 
 
+// returns a signal which will sendNext when the queue has stopped
+- (RACSignal*)hasStoppedSignal;
+
 @end

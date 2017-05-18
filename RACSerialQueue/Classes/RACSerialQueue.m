@@ -21,18 +21,29 @@
 @property (strong) RACSignal* queue; // the serial queue
 @property (assign) BOOL shouldUseMainThread;
 @property (assign) BOOL shouldStop;
+@property (strong) RACSubject* hasStopped;
 @end
 
 @implementation RACSerialQueue
 - (instancetype)init
 {
     if (self = [super init]) {
+        
+        RACSubject* hasStopped = [RACReplaySubject replaySubjectWithCapacity:1];
         RACSubject* subject = [RACSubject subject];
         RACSignal* queue = [[[subject concat] takeUntil:[RACObserve(self, shouldStop) ignore:@NO]] takeUntil:self.rac_willDeallocSignal];
+        _hasStopped = hasStopped;
         _subject = subject;
         _queue = queue;
+
         [queue subscribeNext:^(id x) {
             // activate the queue
+        } error:^(NSError *error) {
+            NSCAssert(!error, @"should not receive any errors");
+        } completed:^{
+           // the queue has stopped
+           [hasStopped sendNext:@(1)];
+           [hasStopped sendCompleted];
         }];
     }
 
@@ -43,6 +54,12 @@
 {
     self.shouldStop = YES;
 } 
+
+- (RACSignal*)hasStoppedSignal
+{
+    return [self.hasStopped takeUntil:self.rac_willDeallocSignal];
+} 
+
 /** 
   * If you want the signal to deliver on the main thread, call this method right after init
   * 
@@ -59,6 +76,7 @@
   */
 - (RACSubject *)addSignal:(RACSignal*)signalToBeExecuted
 {
+    NSParameterAssert(!self.shouldStop); // there is no way to start a stopped queue again
     NSParameterAssert(signalToBeExecuted); // are you kidding me?
 
     if (self.shouldUseMainThread) {
