@@ -17,7 +17,6 @@
 		02E209AB94ED24F8A8153B1173725382 /* NSObject+RACLifting.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B78B6D3C6B001177CF8D910CA542800 /* NSObject+RACLifting.m */; };
 		035910E3D96E2211E3DD6AAC1DCE3CBE /* KWMock.h in Headers */ = {isa = PBXBuildFile; fileRef = 09E221D602AC8BE6402C0078DFF49C4C /* KWMock.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		03926EDF8211FF6EA9B822082463DC53 /* NSNotificationCenter+RACSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = F1FC6A846E66928FA842ADC1787D172A /* NSNotificationCenter+RACSupport.m */; };
-		046469FA856BCA749846CB4C1BB9C081 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F22D4D3BA83449A3E6CA6E3CF8EFC5B /* Foundation.framework */; };
 		05246B73C846ACCFEACEFEE0A41E5656 /* NSNotificationCenter+RACSupport.h in Headers */ = {isa = PBXBuildFile; fileRef = 44BC4BEB76C4196D17FE790EE6491D64 /* NSNotificationCenter+RACSupport.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		05FE0F2F0AA21B529737BA004D7053B6 /* KWBeforeEachNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FCB935CEE8699C6AAFC1E92425F7281 /* KWBeforeEachNode.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		0629F1455B078FB79932D188A5F5586B /* KWConformToProtocolMatcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 87CB88538F441E71207F20FF4EB428B3 /* KWConformToProtocolMatcher.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
@@ -35,6 +34,7 @@
 		0E13B04C70C4C2895C4DD9C7ACE957F3 /* KWFutureObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 46BEB5B1BD9543F65B26153B3DB2C068 /* KWFutureObject.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		0E9FFEBFE589D3E21C56FA85238C2FEA /* RACDynamicSignal.h in Headers */ = {isa = PBXBuildFile; fileRef = 281CF0C565ED04262107E78171B755E1 /* RACDynamicSignal.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0F78CA2E7BFDD221D759F7978BD9C347 /* RACScheduler.h in Headers */ = {isa = PBXBuildFile; fileRef = 53B4BDAEA0DAEDD40C7C6654AF5001D2 /* RACScheduler.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1010534B40894268A673B16193B0F8EC /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FEFBA55C9A9320ECE0FD8009665D329F /* XCTest.framework */; };
 		107DCF785070C50DFA0D3F01AB51FAA0 /* NSURLConnection+RACSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = EDEDF0198A0D1AE141980DDFDDC2DF75 /* NSURLConnection+RACSupport.m */; };
 		10BFAF99C6082BB14A7A4B8D81DA01CD /* KWContextNode.h in Headers */ = {isa = PBXBuildFile; fileRef = 396B9E9675671088C2A884573CB0CE32 /* KWContextNode.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		11DF4C13C60F8B50743571CFBD30F64A /* UISlider+RACSignalSupport.h in Headers */ = {isa = PBXBuildFile; fileRef = 14C27FB220401DE715B647C4E26C50BE /* UISlider+RACSignalSupport.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -64,6 +64,7 @@
 		1EA39E6F9518EAC1DC546661D9A5D9C0 /* UIControl+RACSignalSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = BD551AFD1C2A0C9F0AD0827F2215FFBA /* UIControl+RACSignalSupport.m */; };
 		1F5DB6110C251C3078156A5819C02760 /* NSProxy+KiwiVerifierAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 34229B79A8752DB708ED46E20A3167F1 /* NSProxy+KiwiVerifierAdditions.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		1F96D88C0D7B8E811143768F70DEC54A /* KWBeSubclassOfClassMatcher.h in Headers */ = {isa = PBXBuildFile; fileRef = D66C0A187FC5B6994392BF74BE22E16C /* KWBeSubclassOfClassMatcher.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2042064C71D01E8EDE8D6FC04E78B103 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8BEF3741D4234F9CE071532D9B854D6 /* Foundation.framework */; };
 		20744E9C89D66CCA830ED8B9632BD10B /* RACSubscriber.h in Headers */ = {isa = PBXBuildFile; fileRef = 9F83D913C04E0C95E4E5324D5E6D79E4 /* RACSubscriber.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2191AA4CB5173D11F3F0EAF690086543 /* RACImmediateScheduler.m in Sources */ = {isa = PBXBuildFile; fileRef = 11EB9AD990357949B2F10139812A1EAE /* RACImmediateScheduler.m */; };
 		21BB3B0D9147D6B8BFF4AC0797DC0AEA /* UIControl+RACSignalSupport.h in Headers */ = {isa = PBXBuildFile; fileRef = 6707462570F2DFC022FA90EB3DBB488A /* UIControl+RACSignalSupport.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -109,6 +110,7 @@
 		442C8CFBD14FD9E15886BC74F7A8EA2F /* NSObject+RACDescription.m in Sources */ = {isa = PBXBuildFile; fileRef = 0ABE5CFCF90C44888D494C02E0F5AE5C /* NSObject+RACDescription.m */; };
 		4435E0F7BE315EEEBE6C8DAD22D9C6AE /* KWMatcher.h in Headers */ = {isa = PBXBuildFile; fileRef = 8584DAE8B3B747D81E4525BC62EED880 /* KWMatcher.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		447423B46DF3F053F72934986DAB4599 /* KWProbePoller.h in Headers */ = {isa = PBXBuildFile; fileRef = 0AEB84BA1C1A09125923D09F3D6F267D /* KWProbePoller.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		44CB257C69D0F5CBBC17B9E4E99FACBA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8BEF3741D4234F9CE071532D9B854D6 /* Foundation.framework */; };
 		459CBAC0F9654AE4B2F9508F53A76D63 /* KWFutureObject.h in Headers */ = {isa = PBXBuildFile; fileRef = 2500967200A1FBA8A86290D3E404ADB4 /* KWFutureObject.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		45F095A8F7497D1821F9A57B7A314EF9 /* RACBlockTrampoline.m in Sources */ = {isa = PBXBuildFile; fileRef = F75799A6AEEDDA4AC785D34EB1CD6DDA /* RACBlockTrampoline.m */; };
 		462CD4A943E501CB9269720E8D645AF6 /* KWSharedExampleRegistry.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AA3AA17BD52054AF0FFBADC804B92EE /* KWSharedExampleRegistry.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
@@ -152,6 +154,7 @@
 		5EE8AE611A088787FB2FA55D190F5B3D /* RACDelegateProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = A0C9ADF10748477F2960EB545202F882 /* RACDelegateProxy.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5F15304F06BAA09E176CEF6238DA8AAC /* KWValue.h in Headers */ = {isa = PBXBuildFile; fileRef = C70E30BA188031936156D047A27994B3 /* KWValue.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5FAD6CE7219B0EE1877DF8A2510E721A /* RACBehaviorSubject.h in Headers */ = {isa = PBXBuildFile; fileRef = B97A9AB9446D55E04158D218AAED6CAF /* RACBehaviorSubject.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6075DB6B59A82131EB099C5ADEE4D043 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8BEF3741D4234F9CE071532D9B854D6 /* Foundation.framework */; };
 		6195009CFA84767B81D8E5A20DC13458 /* NSArray+RACSequenceAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 88655C5B626E6C93EF6AFF082D5BB40E /* NSArray+RACSequenceAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		61A6CA22FD552F8A0F84BF4CE8425D32 /* NSObject+RACDeallocating.h in Headers */ = {isa = PBXBuildFile; fileRef = 1FB3BF84441E46675F9593111609C95B /* NSObject+RACDeallocating.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		63C6C69BDEC6EE2F3F9371537DB02AE2 /* NSString+RACKeyPathUtilities.h in Headers */ = {isa = PBXBuildFile; fileRef = 5809638A43237B124208879E1688A039 /* NSString+RACKeyPathUtilities.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -168,7 +171,6 @@
 		669BA4A9C8132D790275A585702FE1AF /* NSObject+KiwiStubAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = B7022AA1E7085770064E41E5C103FD88 /* NSObject+KiwiStubAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		68A060165613736642F0D28E5724EAD4 /* RACSerialDisposable.m in Sources */ = {isa = PBXBuildFile; fileRef = E8D5CA1C4DC1CEEFF77DF7A691D1554C /* RACSerialDisposable.m */; };
 		695E4EA7C859E7B647DA1B2C43805FE4 /* RACSignal.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F19D35D52E783F1591EB5F779C968AB /* RACSignal.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		697612BB58652EA538EC7A00BFC5681A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F22D4D3BA83449A3E6CA6E3CF8EFC5B /* Foundation.framework */; };
 		6A177E053CFE94820162705BDEFA836C /* KWLet.h in Headers */ = {isa = PBXBuildFile; fileRef = A7B0DF22C1B9C313ED8497791B35E71F /* KWLet.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6A2B0499FB0B8939789F735C6532814B /* RACSignal+Lazy.m in Sources */ = {isa = PBXBuildFile; fileRef = 552A22871AB0FCD183FFD2DF3379FD12 /* RACSignal+Lazy.m */; };
 		6A2D9BD1016E7964424F061F2C48C871 /* UICollectionReusableView+RACSignalSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = AFDEF32807704EFDAE5211E3B0517FFE /* UICollectionReusableView+RACSignalSupport.m */; };
@@ -187,7 +189,6 @@
 		70AF8257EBAD9CA5BB5BC083C17A7B21 /* KWBeforeEachNode.h in Headers */ = {isa = PBXBuildFile; fileRef = 2453BEDD22BADA8AB7BDFD29297FB6EE /* KWBeforeEachNode.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		70EC1A510BE7CAE49FE573DB0668C379 /* MKAnnotationView+RACSignalSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = 564B6C1C5326041593D95E8A248423C2 /* MKAnnotationView+RACSignalSupport.m */; };
 		70F0A0DB7AE438404B48B9BE04C04433 /* NSArray+RACSequenceAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 58976A5E8C15AC2795A9E9EA1E163DCE /* NSArray+RACSequenceAdditions.m */; };
-		71195C6502046DA521528889BCE471FA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F22D4D3BA83449A3E6CA6E3CF8EFC5B /* Foundation.framework */; };
 		72F50571F30989328F61464449213EDF /* KWMatcherFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = B46ED357AA6C6668D54F38232E95CFC1 /* KWMatcherFactory.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		73E6918E9E71FF3F4C61B6922EE7CB28 /* RACUnit.h in Headers */ = {isa = PBXBuildFile; fileRef = 2C939FF0910E600A0D0C731FF421171B /* RACUnit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		74E17E59AB38CEB8CB9D3AD0E86973BE /* UIGestureRecognizer+RACSignalSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = 58D185600F2087E7FA8D4C58347D2A65 /* UIGestureRecognizer+RACSignalSupport.m */; };
@@ -245,7 +246,6 @@
 		96EA8C50F8B764CEC8A8963ECD14EBFC /* KWAfterEachNode.h in Headers */ = {isa = PBXBuildFile; fileRef = 823F60372D9D8AF629C2070AADDDC18A /* KWAfterEachNode.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9754689D2C637B093430B8BEF255B769 /* UISlider+RACSignalSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = 5610B8E2EFE6085A0CC19FA0BAADF999 /* UISlider+RACSignalSupport.m */; };
 		9754C75C21F39ED9880180C5A888588F /* KWBeforeAllNode.h in Headers */ = {isa = PBXBuildFile; fileRef = 89A5EFD51843B5441FBCED83BCC4617A /* KWBeforeAllNode.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9777D8C19579AF9060010A211853AA4A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F22D4D3BA83449A3E6CA6E3CF8EFC5B /* Foundation.framework */; };
 		989AD231EEC12F9D0BC8B83EE0887D7F /* KWAfterEachNode.m in Sources */ = {isa = PBXBuildFile; fileRef = C939D15E576057C08A0180699E5D8F19 /* KWAfterEachNode.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		99A0F20E65D7E9B41484A538F72C7F36 /* KWBlockRaiseMatcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 97099AC752CA0495AFD4F51BA5D9C432 /* KWBlockRaiseMatcher.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		9A6EB86A9EBB259327977BD22CDB3DE2 /* RACSignal+Operations.h in Headers */ = {isa = PBXBuildFile; fileRef = E593795DBBB7A70ED1D7B81D08D4474C /* RACSignal+Operations.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -297,7 +297,6 @@
 		BB6BBBEED5ACB88827BF23D0295DC0FC /* RACDynamicSequence.m in Sources */ = {isa = PBXBuildFile; fileRef = B939F78BB038E0658171CF5EEA7E1C1A /* RACDynamicSequence.m */; };
 		BC8CCE24E583DFF4F7922EE69C6EFDC2 /* KWRegularExpressionPatternMatcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FD90DCF8149DAE7260B621DC8955D53 /* KWRegularExpressionPatternMatcher.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		BD09C7662E34D13E1DE32F20CB05A53A /* RACChannel.m in Sources */ = {isa = PBXBuildFile; fileRef = 11F611093279550FE1F6772E1E354E25 /* RACChannel.m */; };
-		BD7BF297A0A78BEBE999068706ADDE08 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F22D4D3BA83449A3E6CA6E3CF8EFC5B /* Foundation.framework */; };
 		BE1450C684EAF1095C49FDA4AECE3C12 /* RACErrorSignal.m in Sources */ = {isa = PBXBuildFile; fileRef = 848C8B15583E2AA0EFFDC0D99AA5DC21 /* RACErrorSignal.m */; };
 		BF37007A947B567D03B33B8F72F8084D /* RACSequence.m in Sources */ = {isa = PBXBuildFile; fileRef = 75C4B9C7C048AA1449556A630440FB1A /* RACSequence.m */; };
 		BFD1E60DE3BE78A3438C35F0E2A2A778 /* KWBackgroundTask.h in Headers */ = {isa = PBXBuildFile; fileRef = D32439A72BAAE4F432B713015C0D66DC /* KWBackgroundTask.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -336,8 +335,8 @@
 		D7B3AEE6204645A834A2D8241E6D2052 /* KWGenericMatchingAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = A4EA9B818565A40DD0399D03A4A156FB /* KWGenericMatchingAdditions.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		D869CC2A7DB6757E3F733AC4D4CDC69A /* RACDynamicSequence.h in Headers */ = {isa = PBXBuildFile; fileRef = 3CFC3961361E35E1E7752C0C7A8A5AE6 /* RACDynamicSequence.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D887A5D96B79A13ECED77224BE615551 /* RACStream.m in Sources */ = {isa = PBXBuildFile; fileRef = F3591D290E338F7B6516C5A62615E395 /* RACStream.m */; };
-		D8891DF93165B1EE6A1A82496175876D /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45752598B27438F948E2C98F610DB33D /* XCTest.framework */; };
 		D8BDE4524FBB5122CE5819E1EFCD59F5 /* RACKVOProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B752D07D28D0E8E11D94B84D4DFB860 /* RACKVOProxy.m */; };
+		D9BB7739AB550ABCCB5761BCA9027CD5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8BEF3741D4234F9CE071532D9B854D6 /* Foundation.framework */; };
 		D9FAF572C013C1F957FB56E2B12BD9CA /* KWInvocationCapturer.h in Headers */ = {isa = PBXBuildFile; fileRef = 90BDBA0AF872EC749430FB92EE201592 /* KWInvocationCapturer.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DAC698C0A7CD737F76544375B381AB5D /* KWExampleDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = F1F0C7E927A9B58DE364FD2AB0214D61 /* KWExampleDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DAFBC151D3C9C4C7BDA8C73A06171015 /* RACEXTRuntimeExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 32F80E6CD30E66749013AE1029281EA3 /* RACEXTRuntimeExtensions.m */; };
@@ -388,6 +387,7 @@
 		F959FDB1ACA6861154381B7D58411530 /* NSValue+KiwiAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = CF25EE1501D47488D7CAB3332011A37D /* NSValue+KiwiAdditions.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		F97A4909B88942CB351A6F31C24EE264 /* RACValueTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 55F029CC533A469767B8CEDCCE04B32C /* RACValueTransformer.m */; };
 		F9D3BD0265B776D5DC4A75938E546A70 /* KiwiMacros.h in Headers */ = {isa = PBXBuildFile; fileRef = A4EB70603F1B20DB4A020E3E53EB4FAA /* KiwiMacros.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FA1FEB8841D492F0181375F9155AE12F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8BEF3741D4234F9CE071532D9B854D6 /* Foundation.framework */; };
 		FA4B340DEF4D1B6C4CAF3C808D82B9FA /* NSObject+KiwiMockAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = D2907B4B2E28542251A0335615C6B504 /* NSObject+KiwiMockAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FA4C005D40C0186195EFFC783F56026C /* MKAnnotationView+RACSignalSupport.h in Headers */ = {isa = PBXBuildFile; fileRef = C3D5DB1A302B559E1AF2B2E3E5641E87 /* MKAnnotationView+RACSignalSupport.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FA8820A9B211F92ED2ADF97F503502EB /* KWReceiveMatcher.h in Headers */ = {isa = PBXBuildFile; fileRef = C2DE9BC0891CEF63DDB22CDCDBEB9F3B /* KWReceiveMatcher.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -562,7 +562,6 @@
 		44BC4BEB76C4196D17FE790EE6491D64 /* NSNotificationCenter+RACSupport.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSNotificationCenter+RACSupport.h"; path = "ReactiveObjC/NSNotificationCenter+RACSupport.h"; sourceTree = "<group>"; };
 		450B3266024256ABA332E2A77DB95C81 /* NSObject+RACKVOWrapper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSObject+RACKVOWrapper.h"; path = "ReactiveObjC/NSObject+RACKVOWrapper.h"; sourceTree = "<group>"; };
 		4571627CA2B2858A07B06CC047CAA92B /* KWContainMatcher.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = KWContainMatcher.m; path = Classes/Matchers/KWContainMatcher.m; sourceTree = "<group>"; };
-		45752598B27438F948E2C98F610DB33D /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		45AAF00249CA24F9598620EA536CB5E9 /* KWObjCUtilities.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = KWObjCUtilities.m; path = Classes/Core/KWObjCUtilities.m; sourceTree = "<group>"; };
 		45CA5FD4C2A6AAAAB2644FED21C39D22 /* KWRegularExpressionPatternMatcher.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KWRegularExpressionPatternMatcher.h; path = Classes/Matchers/KWRegularExpressionPatternMatcher.h; sourceTree = "<group>"; };
 		46BEB5B1BD9543F65B26153B3DB2C068 /* KWFutureObject.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = KWFutureObject.m; path = Classes/Core/KWFutureObject.m; sourceTree = "<group>"; };
@@ -628,7 +627,6 @@
 		6D4CE941048D3FCE917669EFACDFFC67 /* KWCallSite.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KWCallSite.h; path = Classes/Core/KWCallSite.h; sourceTree = "<group>"; };
 		6D8CACEE5460BB48EBE6D575121CBA84 /* NSValue+KiwiAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSValue+KiwiAdditions.h"; path = "Classes/Core/NSValue+KiwiAdditions.h"; sourceTree = "<group>"; };
 		6DE6A2DB0DA41A50BB8B415A7199BE04 /* KWAfterAllNode.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = KWAfterAllNode.m; path = Classes/Nodes/KWAfterAllNode.m; sourceTree = "<group>"; };
-		6F22D4D3BA83449A3E6CA6E3CF8EFC5B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		6F6E4870268979A1E76D85DC665ED246 /* NSInvocation+OCMAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSInvocation+OCMAdditions.m"; path = "Classes/Core/NSInvocation+OCMAdditions.m"; sourceTree = "<group>"; };
 		706E09340E8A8CD2C41B51817442EE8C /* KWStringUtilities.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = KWStringUtilities.m; path = Classes/Core/KWStringUtilities.m; sourceTree = "<group>"; };
 		71984611D62B2D57B348E973429AE059 /* UIButton+RACCommandSupport.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIButton+RACCommandSupport.m"; path = "ReactiveObjC/UIButton+RACCommandSupport.m"; sourceTree = "<group>"; };
@@ -789,6 +787,7 @@
 		C429492E8E566A7BAA58D076DB278284 /* KWBeIdenticalToMatcher.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = KWBeIdenticalToMatcher.m; path = Classes/Matchers/KWBeIdenticalToMatcher.m; sourceTree = "<group>"; };
 		C5B6A0D17E47C75F2A1178B044ECBE3B /* Kiwi-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Kiwi-dummy.m"; sourceTree = "<group>"; };
 		C70E30BA188031936156D047A27994B3 /* KWValue.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KWValue.h; path = Classes/Core/KWValue.h; sourceTree = "<group>"; };
+		C8BEF3741D4234F9CE071532D9B854D6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		C915013E383A75FB4A2B90758CEF8A4D /* RACReplaySubject.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RACReplaySubject.m; path = ReactiveObjC/RACReplaySubject.m; sourceTree = "<group>"; };
 		C939D15E576057C08A0180699E5D8F19 /* KWAfterEachNode.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = KWAfterEachNode.m; path = Classes/Nodes/KWAfterEachNode.m; sourceTree = "<group>"; };
 		CA92C860880B05E1BAC7AE692ACB4E9D /* KWBeWithinMatcher.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = KWBeWithinMatcher.m; path = Classes/Matchers/KWBeWithinMatcher.m; sourceTree = "<group>"; };
@@ -871,6 +870,7 @@
 		FAA3BA05C83C8246C027DEFAF12B5A0F /* UIActionSheet+RACSignalSupport.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIActionSheet+RACSignalSupport.m"; path = "ReactiveObjC/UIActionSheet+RACSignalSupport.m"; sourceTree = "<group>"; };
 		FC1DDAE8002DD1EAAFE0E79467862084 /* NSFileHandle+RACSupport.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSFileHandle+RACSupport.m"; path = "ReactiveObjC/NSFileHandle+RACSupport.m"; sourceTree = "<group>"; };
 		FD4AC2B0A85AE31474006296F564CCD2 /* Pods-RACSerialQueue_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RACSerialQueue_Example.release.xcconfig"; sourceTree = "<group>"; };
+		FEFBA55C9A9320ECE0FD8009665D329F /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -878,8 +878,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BD7BF297A0A78BEBE999068706ADDE08 /* Foundation.framework in Frameworks */,
-				D8891DF93165B1EE6A1A82496175876D /* XCTest.framework in Frameworks */,
+				FA1FEB8841D492F0181375F9155AE12F /* Foundation.framework in Frameworks */,
+				1010534B40894268A673B16193B0F8EC /* XCTest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -887,7 +887,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9777D8C19579AF9060010A211853AA4A /* Foundation.framework in Frameworks */,
+				2042064C71D01E8EDE8D6FC04E78B103 /* Foundation.framework in Frameworks */,
 				B916197EF68B964505D27561F5B0978E /* ReactiveObjC.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -896,7 +896,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				697612BB58652EA538EC7A00BFC5681A /* Foundation.framework in Frameworks */,
+				D9BB7739AB550ABCCB5761BCA9027CD5 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -904,7 +904,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				71195C6502046DA521528889BCE471FA /* Foundation.framework in Frameworks */,
+				6075DB6B59A82131EB099C5ADEE4D043 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -912,7 +912,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				046469FA856BCA749846CB4C1BB9C081 /* Foundation.framework in Frameworks */,
+				44CB257C69D0F5CBBC17B9E4E99FACBA /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -992,6 +992,15 @@
 			path = ../..;
 			sourceTree = "<group>";
 		};
+		89C7A2E594D8B1231382647D5DF58758 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				C8BEF3741D4234F9CE071532D9B854D6 /* Foundation.framework */,
+				FEFBA55C9A9320ECE0FD8009665D329F /* XCTest.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
 		9E53BF1A1B5772A2425E307E2EB1BE7D /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -1060,20 +1069,11 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		CF6008A6F9856551CB73BA3E514557F4 /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				6F22D4D3BA83449A3E6CA6E3CF8EFC5B /* Foundation.framework */,
-				45752598B27438F948E2C98F610DB33D /* XCTest.framework */,
-			);
-			name = iOS;
-			sourceTree = "<group>";
-		};
 		D4DB6190C727A5D4FC50C8D4F7CAA73D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 				5BD210F68E132C9C7009DBB625EFF743 /* ReactiveObjC.framework */,
-				CF6008A6F9856551CB73BA3E514557F4 /* iOS */,
+				89C7A2E594D8B1231382647D5DF58758 /* iOS */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -1828,7 +1828,7 @@
 		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0730;
+				LastSwiftUpdateCheck = 0830;
 				LastUpgradeCheck = 0700;
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
@@ -2112,76 +2112,11 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		1E3F7D5B4D2BA5BACB261A24D5C0E4FB /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 97CCB2F4F54F89A3E901D9319E89BCBD /* ReactiveObjC.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/ReactiveObjC/ReactiveObjC-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/ReactiveObjC/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/ReactiveObjC/ReactiveObjC.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = ReactiveObjC;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		20A18CF4A7805192A10CC67FF10388D7 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = F27A196EB8A9B6E38EFBF7CB29CA0BA2 /* Pods-RACSerialQueue_Tests.debug.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-RACSerialQueue_Tests/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-RACSerialQueue_Tests/Pods-RACSerialQueue_Tests.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_RACSerialQueue_Tests;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		36C08C8C9D918D41138E599638F0F28F /* Release */ = {
+		0133ABC22E8D9C09C62EE0342ABB8C7D /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = FD4AC2B0A85AE31474006296F564CCD2 /* Pods-RACSerialQueue_Example.release.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -2213,15 +2148,16 @@
 			};
 			name = Release;
 		};
-		54A60FD9BF084822B3745BD835481B04 /* Release */ = {
+		052D89B6CEAFF469F6F2E42878A7BDC5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = BE64F1C18BD6E5CEB86E3F62E7F42EFC /* Kiwi.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -2234,7 +2170,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/Kiwi/Kiwi.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_ENABLE_DEBUG_INFO = YES;
 				PRODUCT_NAME = Kiwi;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -2242,12 +2178,13 @@
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Release;
+			name = Debug;
 		};
-		799B90BE6ADF6D29935579EAA9DF8E48 /* Debug */ = {
+		0E35C8F9D9017422493A1B839F775629 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 75F14E3B44E43BC480998781AADF0760 /* Pods-RACSerialQueue_Example.debug.xcconfig */;
+			baseConfigurationReference = 97CCB2F4F54F89A3E901D9319E89BCBD /* ReactiveObjC.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -2259,18 +2196,14 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-RACSerialQueue_Example/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/ReactiveObjC/ReactiveObjC-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ReactiveObjC/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-RACSerialQueue_Example/Pods-RACSerialQueue_Example.modulemap";
+				MODULEMAP_FILE = "Target Support Files/ReactiveObjC/ReactiveObjC.modulemap";
 				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_RACSerialQueue_Example;
+				PRODUCT_NAME = ReactiveObjC;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -2279,51 +2212,48 @@
 			};
 			name = Debug;
 		};
-		8DED8AD26D381A6ACFF202E5217EC498 /* Release */ = {
+		2987BCBC411070160DE0037252145DE8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2B8605F1DA227A3EDD5B294743DFE1D6 /* Pods-RACSerialQueue_Tests.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGNING_REQUIRED = NO;
-				COPY_PHASE_STRIP = YES;
-				ENABLE_NS_ASSERTIONS = NO;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"POD_CONFIGURATION_RELEASE=1",
-					"$(inherited)",
-				);
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-RACSerialQueue_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
-				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
-				STRIP_INSTALLED_PRODUCT = NO;
-				SYMROOT = "${SRCROOT}/../build";
-				VALIDATE_PRODUCT = YES;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-RACSerialQueue_Tests/Pods-RACSerialQueue_Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_RACSerialQueue_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
-		9E1E4E48AF2EAB23169E611BF694090A /* Debug */ = {
+		345CC476DF4A7516DBD2220CF5035FF3 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -2331,10 +2261,13 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGNING_REQUIRED = NO;
@@ -2363,15 +2296,16 @@
 			};
 			name = Debug;
 		};
-		AE0ED90500C4AB63801B25F3913D47AB /* Release */ = {
+		375660D6F9F11BAF167EF9520CCF18FA /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2B8605F1DA227A3EDD5B294743DFE1D6 /* Pods-RACSerialQueue_Tests.release.xcconfig */;
+			baseConfigurationReference = F27A196EB8A9B6E38EFBF7CB29CA0BA2 /* Pods-RACSerialQueue_Tests.debug.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -2384,7 +2318,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-RACSerialQueue_Tests/Pods-RACSerialQueue_Tests.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_ENABLE_DEBUG_INFO = YES;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
@@ -2396,12 +2330,125 @@
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
+			name = Debug;
+		};
+		5E0D2446186AAB652AB32AB9327CEE31 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 75F14E3B44E43BC480998781AADF0760 /* Pods-RACSerialQueue_Example.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-RACSerialQueue_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-RACSerialQueue_Example/Pods-RACSerialQueue_Example.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_RACSerialQueue_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		717E77604BFBB04BEAF56608A1CB2EDE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
 			name = Release;
 		};
-		B25E3BCCDEEFB7B0FF6EFFB4FE8E70A8 /* Debug */ = {
+		7ABA29312858B5A14F2AC5ECB59AF335 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BE64F1C18BD6E5CEB86E3F62E7F42EFC /* Kiwi.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Kiwi/Kiwi-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Kiwi/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Kiwi/Kiwi.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = Kiwi;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		813FFE1E3DD367BAACA7EC264A8E11C2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 98E0AEED07709695F667D09A398DE327 /* RACSerialQueue.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -2429,10 +2476,11 @@
 			};
 			name = Debug;
 		};
-		D3D773AAC48A6B07BBE0F9DEE06DBB04 /* Release */ = {
+		9B7687D6F188C8AC70FD45D6D44D8DB3 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 98E0AEED07709695F667D09A398DE327 /* RACSerialQueue.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -2460,15 +2508,16 @@
 			};
 			name = Release;
 		};
-		E14178641CDDBB844C0FBC52BF3A6B12 /* Debug */ = {
+		CECD65DB5D2708D11B00C44AAADD1ADB /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 97CCB2F4F54F89A3E901D9319E89BCBD /* ReactiveObjC.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -2481,7 +2530,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/ReactiveObjC/ReactiveObjC.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_NAME = ReactiveObjC;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -2489,38 +2538,7 @@
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Debug;
-		};
-		E6C030311F75F89F1A643B98F2F84033 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = BE64F1C18BD6E5CEB86E3F62E7F42EFC /* Kiwi.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Kiwi/Kiwi-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Kiwi/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Kiwi/Kiwi.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = Kiwi;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
+			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
@@ -2528,8 +2546,8 @@
 		1B964AE278D98ABC3D66B11A019894B7 /* Build configuration list for PBXNativeTarget "Pods-RACSerialQueue_Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				20A18CF4A7805192A10CC67FF10388D7 /* Debug */,
-				AE0ED90500C4AB63801B25F3913D47AB /* Release */,
+				375660D6F9F11BAF167EF9520CCF18FA /* Debug */,
+				2987BCBC411070160DE0037252145DE8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -2537,8 +2555,8 @@
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				9E1E4E48AF2EAB23169E611BF694090A /* Debug */,
-				8DED8AD26D381A6ACFF202E5217EC498 /* Release */,
+				345CC476DF4A7516DBD2220CF5035FF3 /* Debug */,
+				717E77604BFBB04BEAF56608A1CB2EDE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -2546,8 +2564,8 @@
 		46B26D3E680984036CCC6F2C006BF9D2 /* Build configuration list for PBXNativeTarget "Kiwi" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				E6C030311F75F89F1A643B98F2F84033 /* Debug */,
-				54A60FD9BF084822B3745BD835481B04 /* Release */,
+				052D89B6CEAFF469F6F2E42878A7BDC5 /* Debug */,
+				7ABA29312858B5A14F2AC5ECB59AF335 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -2555,8 +2573,8 @@
 		71CDF2F42840C9EF11B0F1A0416E7A8A /* Build configuration list for PBXNativeTarget "Pods-RACSerialQueue_Example" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				799B90BE6ADF6D29935579EAA9DF8E48 /* Debug */,
-				36C08C8C9D918D41138E599638F0F28F /* Release */,
+				5E0D2446186AAB652AB32AB9327CEE31 /* Debug */,
+				0133ABC22E8D9C09C62EE0342ABB8C7D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -2564,8 +2582,8 @@
 		9D288D18B87F28A70DC47EB48943398E /* Build configuration list for PBXNativeTarget "ReactiveObjC" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				E14178641CDDBB844C0FBC52BF3A6B12 /* Debug */,
-				1E3F7D5B4D2BA5BACB261A24D5C0E4FB /* Release */,
+				0E35C8F9D9017422493A1B839F775629 /* Debug */,
+				CECD65DB5D2708D11B00C44AAADD1ADB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -2573,8 +2591,8 @@
 		E0E8F2CDC556A264E45405F816AF6371 /* Build configuration list for PBXNativeTarget "RACSerialQueue" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				B25E3BCCDEEFB7B0FF6EFFB4FE8E70A8 /* Debug */,
-				D3D773AAC48A6B07BBE0F9DEE06DBB04 /* Release */,
+				813FFE1E3DD367BAACA7EC264A8E11C2 /* Debug */,
+				9B7687D6F188C8AC70FD45D6D44D8DB3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -1,6 +1,6 @@
 {
   "name": "RACSerialQueue",
-  "version": "0.13.0",
+  "version": "0.14.0",
   "summary": "A queue for ReactiveCocoa",
   "description": "ReactiveCocoa didn't have any queue support. Now it has.",
   "homepage": "https://github.com/haifengkao/RACSerialQueue",
@@ -13,7 +13,7 @@
   },
   "source": {
     "git": "https://github.com/haifengkao/RACSerialQueue.git",
-    "tag": "0.13.0"
+    "tag": "0.14.0"
   },
   "platforms": {
     "ios": "8.0"
