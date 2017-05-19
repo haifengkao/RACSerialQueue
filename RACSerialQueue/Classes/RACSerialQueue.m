@@ -106,22 +106,17 @@
                 return [RACSignal empty];
             } 
 
-            if (!result) {
-                // user doesn't want to control the queue's behavior nor getting the sendNext values
-                return signalToBeExecuted;
-            } else {
-                // pipe the values to result
-                RACSignal* replaySignal = [signalToBeExecuted replayLazilyAutoDisposed];
-                RACSignal* signal = [replaySignal takeUntil:[[result ignoreValues] materialize]];
-                [signal subscribeNext:^(id x) {
-                    [result sendNext:x];
-                } error:^(NSError *error) {
-                    [result sendError:error];
-                } completed:^{
-                    [result sendCompleted];
-                }];
-                return [signal catchTo:[RACSignal empty]]; // don't let error stops the queue
-            } 
+            // pipe the values to result
+            RACSignal* replaySignal = [signalToBeExecuted replayLazilyAutoDisposed];
+            RACSignal* signal = [replaySignal takeUntil:[[result ignoreValues] materialize]];
+            [signal subscribeNext:^(id x) {
+                [result sendNext:x];
+            } error:^(NSError *error) {
+                [result sendError:error];
+            } completed:^{
+                [result sendCompleted];
+            }];
+            return [signal catchTo:[RACSignal empty]]; // don't let error stops the queue
         }
     }];
 
