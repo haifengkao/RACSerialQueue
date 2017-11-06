@@ -21,7 +21,7 @@
   "source_files": "RACSerialQueue/Classes/**/*",
   "dependencies": {
     "ReactiveObjC": [
-      ">= 2.1.2"
+
     ]
   }
 }

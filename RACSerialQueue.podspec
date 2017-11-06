@@ -38,5 +38,5 @@ Pod::Spec.new do |s|
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
-  s.dependency 'ReactiveObjC', '>= 2.1.2' # solve the annoying weakify macro not defined problem
+  s.dependency 'ReactiveObjC' # solve the annoying weakify macro not defined problem
 end

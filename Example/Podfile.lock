@@ -1,8 +1,8 @@
 PODS:
   - Kiwi (2.4.0)
   - RACSerialQueue (0.14.0):
-    - ReactiveObjC (>= 2.1.2)
-  - ReactiveObjC (2.1.2)
+    - ReactiveObjC
+  - ReactiveObjC (3.0.0)
 
 DEPENDENCIES:
   - Kiwi
@@ -14,9 +14,9 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   Kiwi: f49c9d54b28917df5928fe44968a39ed198cb8a8
-  RACSerialQueue: ee0e1c9e24a5a648128fc663f85aaed4a03cb44d
-  ReactiveObjC: 7b6782ae39f9ac0f57205c3b0c0b69b9dd7048c0
+  RACSerialQueue: 1124437b816c8561f9d861191c5248f02681ba48
+  ReactiveObjC: ce79989e8684b9086b5f8d0c74bc7b81a8729c9e
 
 PODFILE CHECKSUM: cc63d1bcd7da929e6a3739eac0b5892264b686a9
 
-COCOAPODS: 1.2.1
+COCOAPODS: 1.3.1
