@@ -7,11 +7,8 @@
 @implementation RACSignal(Lazy)
 
 - (RACSignal *)replayLazilyAutoDisposed {
-    RACMulticastConnection *connection = [self multicast:[RACReplaySubject subject]];
-    return [[RACSignal
-        defer:^{
-            return [connection autoconnect];
-        }]
-    setNameWithFormat:@"[%@] -replayLazilyAutoDisposed", self.name];
+    RACMulticastConnection *connection = [self multicast:[[RACReplaySubject subject] setNameWithFormat:@"Subject[%@] -replayLazilyAutoDisposed", self.name]];
+    return [[connection autoconnect] setNameWithFormat:@"[%@] -replayLazilyAutoDisposed", self.name];
 }
+
 @end
