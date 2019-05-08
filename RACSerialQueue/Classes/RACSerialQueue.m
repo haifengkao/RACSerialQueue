@@ -15,6 +15,7 @@
 #import "NSObject+RACDeallocating.h"
 #import "RACSignal+Operations.h"
 #import "RACSignal+Lazy.h"
+@import ReactiveObjC;
 
 @interface RACSerialQueue()
 @property (strong) RACSubject* subject; // it will receive the signals and put them in queue
@@ -22,6 +23,7 @@
 @property (assign) BOOL shouldUseMainThread;
 @property (assign) BOOL shouldStop;
 @property (strong) RACSubject* hasStopped;
+@property (strong) RACSignal* willStopSignal;
 @end
 
 @implementation RACSerialQueue
@@ -29,9 +31,10 @@
 {
     if (self = [super init]) {
         
+        _willStopSignal = [RACObserve(self, shouldStop) ignore:@NO];
         RACSubject* hasStopped = [RACReplaySubject replaySubjectWithCapacity:1];
         RACSubject* subject = [RACSubject subject];
-        RACSignal* queue = [[[subject concat] takeUntil:[RACObserve(self, shouldStop) ignore:@NO]] takeUntil:self.rac_willDeallocSignal];
+        RACSignal* queue = [[[subject concat] takeUntil:_willStopSignal] takeUntil:self.rac_willDeallocSignal];
         _hasStopped = hasStopped;
         _subject = subject;
         _queue = queue;
@@ -107,8 +110,8 @@
             } 
 
             // pipe the values to result
-            RACSignal* replaySignal = [signalToBeExecuted replayLazilyAutoDisposed];
-            RACSignal* signal = [replaySignal takeUntil:[[result ignoreValues] materialize]];
+            RACSignal* replaySignal = [signalToBeExecuted replayLazilyAutoDisposed]; // signalToBeExecuted will be subscribed twice. one is below, the other is by self.subject
+            RACSignal* signal = [[replaySignal takeUntil:[[result ignoreValues] materialize]] takeUntil:self.willStopSignal];
             [signal subscribeNext:^(id x) {
                 [result sendNext:x];
             } error:^(NSError *error) {
