@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'RACSerialQueue'
-  s.version          = '0.22.0'
+  s.version          = '0.23.0'
   s.summary          = 'A queue for ReactiveCocoa'
 
 # This description is used to generate tags and improve search results.
@@ -29,6 +29,7 @@ Pod::Spec.new do |s|
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '8.0'
+  s.osx.deployment_target = '10.10'
 
   s.source_files = 'RACSerialQueue/Classes/**/*'
   
